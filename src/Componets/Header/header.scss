@@ -1,0 +1,19 @@
+.header {
+  padding: 10px 17px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: #FFB000;
+  border-radius: 0 0 8px 8px;
+  &__img {
+    position: absolute;
+    left: 17px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+  }
+  &__title {
+  }
+}
