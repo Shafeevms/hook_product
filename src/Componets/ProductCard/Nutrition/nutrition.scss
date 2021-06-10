@@ -3,14 +3,14 @@
   margin: 0;
 }
 
-.product_desription {
+.product_description {
   margin: 0 auto;
   padding: 14px 9px 19px 15px;
   width: 312px;
   background-color: #fff;
   border-radius: 5px;
-  &__composition {
-    outline: 1px solid red;
+  &__block {
+    padding-top: 20px;
   }
 }
 
@@ -27,7 +27,7 @@
     font-size: 12px;
   }
   &__text1-margin0 {
-    
+    @include reset;
   }
   &__list {
     @include reset;
@@ -40,5 +40,70 @@
 }
 
 .composition {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn {
+    border: none;
+    background-color: transparent;
+    color: #FFB000;
+  }
+  &__list {
+    @include reset;
+    margin-bottom: 17px;
+    padding-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  &__item {
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+  }
+  &__title {
+    @include reset;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__descr {
+    @include reset;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+  }
+  &__wrap {
+    display: flex;
+  }
+  &__card {
+    width: 35px;
+    height: 14px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: #707070;
+    background-color: #EBEBEB;
+  }
+  &__card-green {
+    color: #0EB44D;
+    background-color: #E7F7ED;
+  }
+}
 
+.table {
+  width: 100%;
+  font-size: 12px;
+  &__name {
+    color: #878786;
+  }
+  &__descr {
+    text-align: right;
+  }
 }

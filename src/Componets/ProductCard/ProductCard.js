@@ -8,6 +8,7 @@ import plus from './img/plus_.svg';
 import trash from './img/trash.svg';
 import favorite from './img/favorites.svg';
 import './ProductCard.scss';
+import BuyWithThis from './BuyWithThis/BuyWithThis';
 
 const ProductCard = () => {
   return (
@@ -41,10 +42,8 @@ const ProductCard = () => {
           </nav>
         </div>
       </div>
-      {/* <BuyMore /> */}
+      <BuyWithThis />
       <Nutrition />
-      {/* <Ingredients />
-      <Other /> */}
     </>
   );
 };
