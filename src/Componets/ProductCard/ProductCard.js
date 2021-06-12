@@ -1,14 +1,14 @@
 import React from 'react';
 import Nutrition from './Nutrition/Nutrition';
-import des1 from './img/1.svg';
-import des2 from './img/2.svg';
-import des3 from './img/3.svg';
-import contentImg from './img/bottle.png';
-import plus from './img/plus_.svg';
-import trash from './img/trash.svg';
-import favorite from './img/favorites.svg';
+import des1 from '../img/1.svg';
+import des2 from '../img/2.svg';
+import des3 from '../img/3.svg';
+import contentImg from '../img/bottle.png';
+import favorite from '../img/favorites-white.svg';
 import './ProductCard.scss';
 import BuyWithThis from './BuyWithThis/BuyWithThis';
+import ButtonTrash from '../ButtonTrash/Buttontrash';
+import ButtonPlus from '../ButtonPlus/ButtonPlus';
 
 const ProductCard = () => {
   return (
@@ -29,9 +29,10 @@ const ProductCard = () => {
           <h3 className="card__unit_price ">1 pc / £1.59</h3>
           <div className="card__add_to_cart">
             <h3 className="card__title_price ">£1.59</h3>
-            <button className="card__btn_del"><img className="card__img_del" src={trash} /></button>
+            <ButtonTrash className="card__btn_del" style={{ marginRight: '20px' }}/>
+            {/* ??? не срабатывают стили на ButtonTrash, только те, которые внутри компонента */}
             <span className="card__units_quantity">2</span>
-            <button className="card__add_unit"><img src={plus} /></button>
+            <ButtonPlus />
           </div>
           <nav className="card__navigation nav">
             <ul className="nav__list">

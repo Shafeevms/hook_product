@@ -60,14 +60,10 @@
     margin-right: auto;
   }
   &__btn_del {
-    @include btn;
     margin-right: 12px;
   }
   &__units_quantity {
     margin-right: 12px;
-  }
-  &__add_unit {
-    @include btn;
   }
 }
 

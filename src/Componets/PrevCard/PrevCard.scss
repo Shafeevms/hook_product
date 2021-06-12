@@ -1,0 +1,38 @@
+@mixin reset {
+  padding: 0;
+  margin: 0;
+}
+
+.prev {
+  position: relative;
+  padding: 12px;
+  width: 152px;
+  background-color: #fff;
+  border-radius: 5px;
+  &__favorite {
+    position: absolute;
+    right: 12px;
+  }
+  &__img {
+    margin: 0 auto;
+    display: block;
+  }
+  &__description {
+    @include reset;
+    margin-bottom: 4px;
+    font-size: 14px;
+    max-width: 120px;
+  }
+  &__unit_price {
+    font-size: 12px;
+    font-weight: 400;
+    color: #878786;
+  }
+  &__add_to_cart {
+    display: flex;
+    align-items: center;
+  }
+  &__title_price {
+    margin-right: auto;
+  }
+}

@@ -25,9 +25,11 @@
     @include reset;
     margin-bottom: 17px;
     font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
   }
   &__text1-margin0 {
     @include reset;
+    font-family: 'Open Sans', sans-serif;
   }
   &__list {
     @include reset;
