@@ -1,11 +1,23 @@
 .header {
-  padding: 10px 17px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  height: 100px;
-  background-color: #FFB000;
-  border-radius: 0 0 8px 8px;
+  &__top {
+    position: fixed;
+    padding: 10px 17px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 360px;
+    background-color: #FFB000;
+    border-radius: 0 0 8px 8px;
+    z-index: 20;
+  }
+  &__bottom {
+    position: relative;
+    top: 0;
+    height: 100px;
+    background-color: #FFB000;
+    border-radius: 0 0 8px 8px;
+  }
   &__img {
     position: absolute;
     left: 17px;

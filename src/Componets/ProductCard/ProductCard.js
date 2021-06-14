@@ -1,5 +1,6 @@
 import React from 'react';
 import Nutrition from './Nutrition/Nutrition';
+import Header from '../Header';
 import des1 from '../img/1.svg';
 import des2 from '../img/2.svg';
 import des3 from '../img/3.svg';
@@ -13,6 +14,7 @@ import ButtonPlus from '../ButtonPlus/ButtonPlus';
 const ProductCard = () => {
   return (
     <>
+      <Header />
       <div className="card">
         <img className="card__favorite" src={favorite} />
         <div className="card__head head">
@@ -29,7 +31,7 @@ const ProductCard = () => {
           <h3 className="card__unit_price ">1 pc / £1.59</h3>
           <div className="card__add_to_cart">
             <h3 className="card__title_price ">£1.59</h3>
-            <ButtonTrash className="card__btn_del" style={{ marginRight: '20px' }}/>
+            <ButtonTrash className="card__btn_del" style={{ marginRight: '20px' }} />
             {/* ??? не срабатывают стили на ButtonTrash, только те, которые внутри компонента */}
             <span className="card__units_quantity">2</span>
             <ButtonPlus />

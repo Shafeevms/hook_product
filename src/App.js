@@ -1,12 +1,12 @@
 import './styles/app.scss';
-import Header from './Componets/Header';
-import ProductCard from './Componets/ProductCard/ProductCard';
+// import ProductCard from './Componets/ProductCard/ProductCard';
+import Cart from './Componets/Cart/Cart';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <ProductCard />
+      {/* <ProductCard /> */}
+      <Cart />
     </div>
   );
 }
