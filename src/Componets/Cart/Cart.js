@@ -3,6 +3,7 @@ import Header from '../Header';
 import trash from '../img/trash.svg';
 import PromoSuccess from '../success';
 import Delivery from '../Delivery/Delivery';
+import './Cart.scss';
 
 const Cart = () => {
   return (
@@ -11,9 +12,11 @@ const Cart = () => {
       <div className="cart">
         <div className="cart__address">
           <h2 className="cart__address_title cart__title">Delivery address</h2>
-          <img src={trash} />
+          <button className="cart__button">
+            <img src={trash} />
+          </button>
         </div>
-        <div className="cart__address_form">
+        <div className="cart__address-form">
           {/* <CartInput /> */}
           <input className="cart__address_input" />
           <input className="cart__address_input" placeholder="Floor" />

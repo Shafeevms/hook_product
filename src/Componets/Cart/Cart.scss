@@ -1,0 +1,38 @@
+@mixin btn {
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: transparent;
+}
+
+.cart {
+  position: relative;
+  margin: 0 auto;
+  padding: 18px 18px 14px;
+  width: 312px;
+  background-color: #fff;
+  border-radius: 5px;
+  transform: translate(0, -50px);
+  &__address {
+      display: flex;
+      justify-content: space-between; 
+  }
+  &__title {
+      font-size: 14px;
+      font-weight: 600;
+  }
+  &__button {
+    @include btn;
+    width: 18px;  
+  }
+  &__address-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__address_input {
+    width: 87px;
+    height: 48px;
+  }
+}
