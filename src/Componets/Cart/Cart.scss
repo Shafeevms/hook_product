@@ -27,12 +27,27 @@
     width: 18px;  
   }
   &__address-form {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  &__label {
+    position: absolute;
+    top: 5px;
+    left: 11px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #C4C4C4;
+  }
   &__address_input {
+    padding-left: 11px;
     width: 87px;
     height: 48px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    &:focus {
+      border-color: #FFB000;
+    }
   }
 }

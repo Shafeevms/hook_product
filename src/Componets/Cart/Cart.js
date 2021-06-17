@@ -18,12 +18,13 @@ const Cart = () => {
         </div>
         <div className="cart__address-form">
           {/* <CartInput /> */}
-          <input className="cart__address_input" />
+          <label htmlFor="flat" className="cart__label">Flat</label>
+          <input name="flat" className="cart__address_input" />
           <input className="cart__address_input" placeholder="Floor" />
           <input className="cart__address_input" placeholder="Block" />
         </div>
         <div className="cart__product_list product_list">
-          <h2 className="cart__title"></h2>
+          <h2 className="cart__title">2 items</h2>
           <ul className="product_list__list">
             <li className="product_list__item"></li>
             <li className="product_list__item"></li>
